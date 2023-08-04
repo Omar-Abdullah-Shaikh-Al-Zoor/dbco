@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dbco *.css
+recursive-include dbco *.csv
+recursive-include dbco *.html
+recursive-include dbco *.ico
+recursive-include dbco *.js
+recursive-include dbco *.json
+recursive-include dbco *.md
+recursive-include dbco *.png
+recursive-include dbco *.py
+recursive-include dbco *.svg
+recursive-include dbco *.txt
+recursive-exclude dbco *.pyc
