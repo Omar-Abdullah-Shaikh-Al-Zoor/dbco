@@ -2,11 +2,11 @@ from . import __version__ as app_version
 
 app_name = "dbco"
 app_title = "Dbco"
-app_publisher = "Advanced Resources"
-app_description = "Custom application customized for DBCO company"
+app_publisher = "Omar Shaikh Al Zoor"
+app_description = "DBCO App"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "ar@gmail.com"
+app_email = "omar@gmail.com"
 app_license = "MIT"
 
 # Includes in <head>
@@ -186,3 +186,22 @@ user_data_fields = [
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+fixtures = [
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                "Employee-name_arabic","Employee-id_number","Employee-id_issue_date","Employee-id_valid_to","Employee-id_photo",
+				"Employee-nationality","Employee-column_break","Employee-driving_license_no","Employee-dl_type",
+				"Employee-dl_issue_date","Employee-dl_valid_up_to","Employee-column_break_89","Employee-passport_photo1","Employee-dl_photo1",
+				"Employee-bank_branch"
+            ]
+        ]
+    ]},
+	  {
+		"dt": "DocType", 
+		"filters": [["name", "in", ["Nationality", "Payroll Deductions Table","Payroll Earnings Table", "Salary Slip Updater"]]]
+	  },
+	  { 
+	  "dt": "Server Script" 
+	  }
+]
